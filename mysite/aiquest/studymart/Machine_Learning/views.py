@@ -3,7 +3,11 @@ from django.shortcuts import render
 
 # Create your views here.
 def machine_learning(request):
-    return render(request, 'machine_learning/machine_learning.html')
+    name = 'Abir'
+    age = 24
+    job = 'Machine Learning Engineer'
+    test = {'name': name, 'age': age, 'profession': job,}
+    return render(request, 'machine_learning/machine_learning.html', context=test)
 
 def random_forest(request):
   return render(request,'machine_learning/randomforest.html')
