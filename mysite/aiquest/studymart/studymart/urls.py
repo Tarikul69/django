@@ -27,5 +27,4 @@ urlpatterns = [
     path('data/', include('Data_Analysis.urls')),
     path('deep/', include('Deep_Learning.urls')),
     path('ml/', include('Machine_Learning.urls')),
-
 ]
