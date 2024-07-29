@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 # Create your views here.
 def deep_learning(request):
-    return HttpResponse('<p>Deep Learning App</p>');
+    return render(request, 'deep_learning.html')
