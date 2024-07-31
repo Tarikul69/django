@@ -1,0 +1,14 @@
+body {
+    background-color: green;
+}
+
+h2 {
+    color: yellow;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+img {
+    height: 400px;
+    width: 500px;
+}
