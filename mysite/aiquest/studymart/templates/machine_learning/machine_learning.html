@@ -8,9 +8,15 @@
 <body>
     <center>
         <h2>Machine Learning</h2>
-        <p>{{name}}</p>
+        <p>{{name | upper}}</p>
         <p>{{age}}</p>
         <p>{{profession}}</p>
+        {% if name %}
+        <h1>This is if part</h1>
+        {% endif %}
+        {% for tn in teacher reversed %}
+        <p>{{forloop.counter}}.{{tn}}</p>
+        {% endfor %}
     </center>
 </body>
 </html>
