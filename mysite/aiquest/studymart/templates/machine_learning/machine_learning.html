@@ -1,22 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Machine Learning</title>
-</head>
-<body>
-    <center>
-        <h2>Machine Learning</h2>
-        <p>{{name | upper}}</p>
-        <p>{{age}}</p>
-        <p>{{profession}}</p>
-        {% if name %}
-        <h1>This is if part</h1>
-        {% endif %}
-        {% for tn in teacher reversed %}
-        <p>{{forloop.counter}}.{{tn}}</p>
-        {% endfor %}
+{% extends 'common_code/navbar.html' %}
+
+{% block body %}
+<center>
+    <h3>Machine Learning</h3>
     </center>
-</body>
-</html>
+{% endblock %}

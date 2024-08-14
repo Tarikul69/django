@@ -1,28 +1,7 @@
-{% load static %}
+{% extends 'common_code/navbar.html' %}
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-</head>
-
-<body>
-
-    <ul style="list-style: circle;">
-        <li>Machine Learning</li>
-        <li>Deep Learning</li>
-        <li>Data Science</li>
-        <li>DJango</li>
-    </ul>
-    <ol type="I">
-        <li>Machine Learning</li>
-        <li>Deep Learning</li>
-        <li>Data Science</li>
-        <li>DJango</li>
-    </ol>
-</body>
-
-</html>
+{% block body %}
+<center>
+    <h3>About</h3>
+</center>
+{% endblock %}
