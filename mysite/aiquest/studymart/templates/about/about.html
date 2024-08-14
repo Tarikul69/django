@@ -5,3 +5,29 @@
     <h3>About</h3>
 </center>
 {% endblock %}
+{% block bottomnavbar %}
+<nav class="navbar fixed-bottom navbar-light bg-light">
+    <div class="container-fluid justify-content-around">
+        <a class="nav-link" href="#">
+            <i class="bi bi-house-door"></i>
+            <span>Home</span>
+        </a>
+        <a class="nav-link" href="#">
+            <i class="bi bi-search"></i>
+            <span>Search</span>
+        </a>
+        <a class="nav-link" href="#">
+            <i class="bi bi-plus-circle"></i>
+            <span>Add</span>
+        </a>
+        <a class="nav-link" href="#">
+            <i class="bi bi-bell"></i>
+            <span>Notifications</span>
+        </a>
+        <a class="nav-link" href="#">
+            <i class="bi bi-person"></i>
+            <span>Profile</span>
+        </a>
+    </div>
+</nav>
+{% endblock %}
