@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <h2>{{ thr }}</h2>
+    
     {% if thr %}
     <table>
         <tr>
@@ -17,12 +17,12 @@
             <th>Name</th>
             <th>Email</th>
         </tr>
-        {% for th in thr %}
-        <tr>
-            <td>th.id</td>
-            <td>th.tid</td>
-            <td>th.tname</td>
-            <td>th.temail</td>
+    {% for th in thr %}
+    <tr>
+        <td>{{th.id}}</td>
+        <td>{{th.tid}}</td>
+        <td>{{th.tname}}</td>
+        <td>{{th.temail}}</td>
         </tr>
         {% endfor %}
 
