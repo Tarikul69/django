@@ -30,6 +30,28 @@
         {% else %}
         <h2>Empty</h2>
         {% endif %}
+        
+        
+        {% if thr %}
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Teachers ID</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+            {% for th in thr %}
+            <tr>
+                <td>{{th.id}}</td>
+                <td>{{th.tid}}</td>
+                <td>{{th.tname}}</td>
+                <td>{{th.temail}}</td>
+            </tr>
+            {% endfor %}
+                </table>
+                {% else %}
+                <h2>Empty</h2>
+                {% endif %}
     </center>
 </body>
 
