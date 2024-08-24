@@ -8,7 +8,7 @@ def machine_learning(request):
     job = 'Machine Learning Engineer'
     test = {'name': name, 'age': age, 'profession': job, 'teacher': ['Abir', 'Munna', 'Tasin']}
     return render(request, 'machine_learning/machine_learning.html', context=test)
-
+ 
 def random_forest(request):
   return render(request,'machine_learning/randomforest.html')
 
